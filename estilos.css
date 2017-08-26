@@ -1,0 +1,27 @@
+body {
+	background-color: gray;
+}
+
+h1 {
+	font-family: "Ubuntu";
+}
+
+p {
+	color: blue;
+	border: solid;
+	border-color: cyan;
+}
+
+#igor {
+	color: red;
+	border: dashed;
+	border-color: yellow;
+}
+
+.exemplo {
+	color: white;
+	border: dotted;
+	border-color: red;
+	font-family: Ubuntu;
+	font-size: 18px;
+}

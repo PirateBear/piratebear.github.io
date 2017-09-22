@@ -1,0 +1,30 @@
+body {
+	border: solid;
+	padding: 15px;
+	border-color: lightgray;
+	background-color: #DBCE78;
+	text-align: left;
+	border-spacing: 2px;
+}
+
+.imagem {
+	max-width: 300px;
+	max-height: 350px;
+}
+
+.titleh1 {
+	text-align: center;
+	font-family: Verdana;
+}
+
+.titleh2 {
+	font-family: Verdana;
+}
+
+.titleh3 {
+	font-family: Verdana;
+}
+
+p {
+	font-family: Verdana;
+}

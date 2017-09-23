@@ -28,3 +28,18 @@ body {
 p {
 	font-family: Verdana;
 }
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+th, tr {
+	border: solid;
+	border-color: blue;
+	color: green;
+	border-right: none;
+}

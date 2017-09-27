@@ -1,0 +1,21 @@
+th {
+	margin: 2px;
+	border: solid;
+	width: 500px;
+	height: 40px;
+	background-color: darkcyan;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: sans-serif;
+}
+
+td {
+	margin: 2px;
+	border: solid;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	background-color: lightgreen;
+	font-family: sans-serif;
+	font-size: 20px;
+}

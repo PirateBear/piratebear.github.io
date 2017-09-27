@@ -12,16 +12,16 @@ body {
 	max-height: 350px;
 }
 
-.titleh1 {
+h1 {
 	text-align: center;
 	font-family: Verdana;
 }
 
-.titleh2 {
+h2 {
 	font-family: Verdana;
 }
 
-.titleh3 {
+h3 {
 	font-family: Verdana;
 }
 
@@ -37,9 +37,20 @@ a:hover {
 	text-decoration: underline;
 }
 
-th, tr {
+tr, td {
+	text-align: right;
+	width: 200px;
+	padding: 2px;
 	border: solid;
-	border-color: blue;
-	color: green;
-	border-right: none;
+	border-color: grey;
+	color: black;
+}
+
+th {
+	text-align: left;
+	padding: 2px;
+	border: groove;
+	border-color: grey;
+	color: black;
+	background-color: lightgray;
 }

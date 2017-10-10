@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pedido</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="estiloscafe.css">
+	<link href="index.html">
+
+</head>
+<body>
+
+<h1>Café Starbugs</h1>
+
+<h2>Pedido online</h2>
+
+<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi" method="get">
+
+<table border="1">
+
+<tr><p>Dados de contato</p></tr>
+
+	<tr><td>Nome completo:</td>
+	<td><input type="text" placeholder="Jean Simonet Dalla Nora"></td></tr>
+	<br><br>
+
+	<tr><td>Email:</td>
+	<td><input type="text" placeholder="jean.fw@hotmail.com"></td></tr>
+	<br><br>
+
+	<tr><td>Telefone:</td>
+	<td><input type="number" placeholder="55999717136"></tr><br><br>
+
+<p>Informações do pedido</p>
+
+	Grão desejado: <select name="graos">
+		<option>Grãos da Colômbia</option>
+		<option>Grãos de Cuba</option>
+		<option>Grãos de Java</option>
+		<option>Grãos da Itália</option>
+	</select><br><br>
+
+	Tipo:<br>
+	<input type="radio" name="tipo" value="graointeiro" checked> Grãos Inteiros.<br>
+	<input type="radio" name="tipo" value="graomoido"> Grãos Moídos.
+	<br><br>
+
+	Extras:<br>
+	<input type="checkbox" name="extras" value="embalado"> Embalar para presente.<br>
+	<input type="checkbox" name="extras" value="catalogo"> Quero um catálogo com cafés especiais.
+	<br><br>
+
+<p>Dados de entrega</p><br>
+	Nome:<br>
+	<input type="text" name="nome"><br>
+	Endereço:<br>
+	<input type="text" name="enredeco"><br>
+	Cidade:<br>
+	<input type="text" name="cidade"><br>
+	Estado:<br>
+	<input type="text" name="estado"><br>
+	CEP:<br>
+	<input type="text" name="cep"><br><br>
+
+	Observações:<br>
+	<textarea name="observacoes"></textarea><br><br>
+
+	<input type="submit" value="Enviar pedido!">
+
+</table>
+
+</form>
+
+
+</body>
+</html>

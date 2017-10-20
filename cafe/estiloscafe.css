@@ -39,7 +39,7 @@ a:hover {
 
 tr, td {
 	text-align: right;
-	width: 200px;
+	width: 250px;
 	padding: 2px;
 	border: solid;
 	border-color: grey;
@@ -56,13 +56,28 @@ th {
 }
 
 .formheader {
+	text-align: center;
+	font-size: 18px;
+	color: darkblue;
+	font-weight: bold;
+	background-color: yellow;
+	letter-spacing: 0.5px;
 
 }
 
 .formlabel {
+	text-align: right;
+	width: 150px;
 
 }
 
 .formfield {
-	
+	text-align: left;
+	background-color: none;
+	width: 600px;
+}
+
+.buttons {
+	text-align: center;
+
 }

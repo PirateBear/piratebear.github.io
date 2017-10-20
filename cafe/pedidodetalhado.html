@@ -18,54 +18,95 @@
 
 <table border="1">
 
-<tr><p>Dados de contato</p></tr>
+	<tr>
+		<td class="formheader" colspan="2">Dados de contato</td>
+	</tr>
 
-	<tr><td>Nome completo:</td>
-	<td><input type="text" placeholder="Jean Simonet Dalla Nora"></td></tr>
-	<br><br>
+	<tr>
+		<td class="formlabel">Nome completo:</td>
+		<td class="formfield"><input type="text" placeholder="Jean Simonet Dalla Nora"></td>
+	</tr>
 
-	<tr><td>Email:</td>
-	<td><input type="text" placeholder="jean.fw@hotmail.com"></td></tr>
-	<br><br>
+	<tr>
+		<td class="formlabel">Email:</td>
+		<td class="formfield"><input type="text" placeholder="jean.fw@hotmail.com"></td>
+	</tr>
 
-	<tr><td>Telefone:</td>
-	<td><input type="number" placeholder="55999717136"></tr><br><br>
+	<tr><td class="formlabel">Telefone:</td>
+		<td class="formfield"><input type="number" placeholder="55999717136"></td>
+	</tr>
 
-<p>Informações do pedido</p>
+	<tr>
+		<td class="formheader" colspan="2">Informações do pedido</td>
+	</tr>
 
-	Grão desejado: <select name="graos">
-		<option>Grãos da Colômbia</option>
-		<option>Grãos de Cuba</option>
-		<option>Grãos de Java</option>
-		<option>Grãos da Itália</option>
-	</select><br><br>
+	<tr>
+		<td class="formlabel">Variedade:</td>
+		<td class="formfield"><select>
+			<option>Grãos da Colômbia</option>
+			<option>Grãos de Cuba</option>
+			<option>Grãos de Java</option>
+			<option>Grãos da Itália</option>
+		</select></td>
+	</tr>
 
-	Tipo:<br>
-	<input type="radio" name="tipo" value="graointeiro" checked> Grãos Inteiros.<br>
-	<input type="radio" name="tipo" value="graomoido"> Grãos Moídos.
-	<br><br>
+	<tr>
+		<td class="formlabel">Quantidade:</td>
+		<td class="formfield"><input type="number" min="1" max="100" placeholder="50"></td>
+	</tr>
 
-	Extras:<br>
-	<input type="checkbox" name="extras" value="embalado"> Embalar para presente.<br>
-	<input type="checkbox" name="extras" value="catalogo"> Quero um catálogo com cafés especiais.
-	<br><br>
+	<tr>
+		<td class="formlabel">Data limite:</td>
+		<td class="formfield"><input type="date" class="formfield"></td>
+	</tr>
 
-<p>Dados de entrega</p><br>
-	Nome:<br>
-	<input type="text" name="nome"><br>
-	Endereço:<br>
-	<input type="text" name="enredeco"><br>
-	Cidade:<br>
-	<input type="text" name="cidade"><br>
-	Estado:<br>
-	<input type="text" name="estado"><br>
-	CEP:<br>
-	<input type="text" name="cep"><br><br>
+	<tr>
+		<td class="formlabel">Tipo:</td>
+		<td class="formfield"><input type="radio" name="graos" value="graos inteiros">Grãos Inteiros
+		<input class="formfield" type="radio" name="graos" value="graos moidos">Grãos Moídos</td>
+	</tr>
 
-	Observações:<br>
-	<textarea name="observacoes"></textarea><br><br>
+	<tr>
+		<td class="formlabel">Extras:</td>
+		<td class="formfield"><input type="checkbox" name="extra" value="embalar p presente">Embalar para presente<br>
+		<input type="checkbox" name="extra" value="catalogo c cafes especiais">Quero um catálogo com cafés especiais.</td>
+	</tr>
 
-	<input type="submit" value="Enviar pedido!">
+	<tr>
+		<td class="formheader" colspan="2">Dados da Entrega</td>
+	</tr>
+
+	<tr>
+		<td class="formlabel">Endereço:</td>
+		<td class="formfield"><input type="text" placeholder="Rua das Camélias, 742, apto 205"></td>		
+	</tr>
+
+	<tr>
+		<td class="formlabel">Cidade/Estado:</td>
+		<td class="formfield"><input type="text" placeholder="Frederico Westphalen"> / 
+		<select>
+			<option>RS</option>
+			<option>SC</option>
+			<option>PR</option>	
+		</select></td>
+	</tr>
+
+	<tr>
+		<td class="formlabel">CEP:</td>
+		<td class="formfield"><input type="number" placeholder="Use apenas números!"></td>
+	</tr>
+
+	<tr>
+		<td class="formlabel">Observações:</td>
+		<td class="formfield"><input type="textarea" placeholder="Sem açucar."></td>
+	</tr><br>
+
+	<tr>
+	<td colspan="2" class="buttons">
+		<input type="button" value="Limpar" onclick="reset()">
+
+		<input type="submit" value="Enviar pedido!"></td>
+	</tr>
 
 </table>
 
